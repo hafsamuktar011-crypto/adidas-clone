@@ -1,0 +1,29 @@
+
+@import "tailwindcss";
+
+:root {
+  --text: #121213;
+  --bg: #fff;
+  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+
+  letter-spacing: 0.18px;
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text);
+    font-family: var(--sans);
+    background: var(--bg);
+  }
+}
+
