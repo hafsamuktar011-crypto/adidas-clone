@@ -8,7 +8,7 @@ function Nav() {
 
   return (
     <div className="sticky top-0 z-50">
-      {/* Top bar: collapsed banner OR expanded panel, same slot, normal flow */}
+      
       {!showAlert ? (
         <button
           onClick={() => setShowAlerts(true)}
@@ -45,7 +45,7 @@ function Nav() {
         </div>
       )}
 
-      {/* Nav sits BELOW the banner in normal flow — no longer `fixed` */}
+      
       <nav className="flex justify-between items-center bg-white px-6 py-3 border-b">
         <img src={adidaslogo} alt="adidas logo" className="h-8" />
 
