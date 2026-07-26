@@ -7,18 +7,18 @@ function Nav() {
   const [showAlert, setShowAlerts] = useState(false)
 
   return (
-    <div className="sticky top-0 z-50">
-      {/* Top bar: collapsed banner OR expanded panel, same slot, normal flow */}
+    <div className="sticky top-0 ">
+
       {!showAlert ? (
         <button
           onClick={() => setShowAlerts(true)}
-          className="w-full bg-black text-white py-3 flex items-center justify-center gap-2 text-sm"
+          className="w-full bg-black text-white py-3 flex items-center justify-center gap-2 text-sm relative "
         >
           FREE SHIPPING FOR ADICLUB MEMBERS
           <ChevronDown size={16} />
         </button>
       ) : (
-        <div className="w-full bg-white border-b p-6 relative">
+        <div className="w-full bg-white border-b p-6 fixed z-40">
           <button
             onClick={() => setShowAlerts(false)}
             className="absolute top-3 right-3 bg-white"
@@ -34,19 +34,18 @@ function Nav() {
             </p>
             <a
               href="https://www.adidas.es/account-login"
-              target="_blank"
-              rel="noopener noreferrer"
               className="inline-block bg-black text-white px-4 py-2 text-sm mr-4"
             >
               Join adiClub for Free
             </a>
-            <a href="#" className="text-sm underline">More information</a>
+            <a href="https://www.adidas.es/ayuda/entregas/cual-es-el-plazo-de-entrega-y-el-coste-del-envio"
+             className="text-sm underline">More information</a>
           </div>
         </div>
       )}
 
-      {/* Nav sits BELOW the banner in normal flow — no longer `fixed` */}
-      <nav className="flex justify-between items-center bg-white px-6 py-3 border-b">
+
+      <nav className="flex justify-between items-center bg-white px-6 py-3 border-b sticky w-full ">
         <img src={adidaslogo} alt="adidas logo" className="h-8" />
 
         <div className="flex gap-4">
@@ -64,7 +63,7 @@ function Nav() {
             placeholder="Forum Mid Player"
             className="bg-transparent outline-none px-2 py-1"
           />
-          <Search size={18} />
+          <Search size={18} className='bg-transparent'/>
         </div>
 
         <div className="flex justify-end items-center gap-3">

@@ -3,7 +3,7 @@
 
 :root {
   --text: #121213;
-  --bg: #fff;
+  /* --bg: #fff; */
   --sans: system-ui, "Segoe UI", Roboto, sans-serif;
 
   letter-spacing: 0.18px;
