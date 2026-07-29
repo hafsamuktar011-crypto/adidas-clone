@@ -7,15 +7,17 @@ function Nav() {
   const [showAlert, setShowAlerts] = useState(false)
 
   return (
-    <div className="sticky top-0 ">
+
+    <div className="sticky top-0 z-50 ">
+      
 
       {!showAlert ? (
         <button
           onClick={() => setShowAlerts(true)}
-          className="w-full bg-black text-white py-3 flex items-center justify-center gap-2 text-sm relative "
+          className="w-full bg-black text-white py-3 flex items-center justify-center gap-2 text-sm relative  "
         >
           FREE SHIPPING FOR ADICLUB MEMBERS
-          <ChevronDown size={16} />
+          <ChevronDown size={16} style={{color:'white'}} />
         </button>
       ) : (
         <div className="w-full bg-white border-b p-6 fixed z-40">
@@ -26,7 +28,7 @@ function Nav() {
             <X size={24} />
           </button>
 
-          <div className="px-6">
+          <div className="px-6 ">
             <p className="font-bold mb-1">Free standard shipping with adiClub</p>
             <p className="text-sm text-gray-600 mb-3">
               Subscribe to adiClub to enjoy free standard shipping and earn points on
@@ -45,7 +47,11 @@ function Nav() {
       )}
 
 
+
       <nav className="flex justify-between items-center bg-white px-6 py-3 border-b sticky w-full ">
+
+      
+
         <img src={adidaslogo} alt="adidas logo" className="h-8" />
 
         <div className="flex gap-4">

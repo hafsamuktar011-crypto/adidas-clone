@@ -1,8 +1,9 @@
 
 @import "tailwindcss";
+@plugin "tailwind-scrollbar-hide";
 
 :root {
-  --text: #121213;
+  /* --text: #121213; */
   /* --bg: #fff; */
   --sans: system-ui, "Segoe UI", Roboto, sans-serif;
 
