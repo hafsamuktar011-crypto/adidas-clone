@@ -3,6 +3,7 @@ import Nav from '../Nav'
 import Hero from '../Hero'
 import Body from '../../Body'
 import { ShoeProvider } from '../../context/Shoecontext'
+import Footer from '../Footer'
 
 function Home() {
   return (
@@ -10,7 +11,7 @@ function Home() {
        <Nav/>
         <Hero/>
       <Body/>
-     
+     <Footer/>
         
     </>
   )

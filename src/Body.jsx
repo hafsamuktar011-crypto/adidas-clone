@@ -6,6 +6,7 @@ import PromoHighlight from "./PromoHighlight";
 import Grace from "./Grace";
 import Interesting from "./Interesting";
 
+
 function Body() {
   const { Shoes } = useContext(ShoeContext);
 
@@ -57,7 +58,7 @@ function Body() {
       <div className="flex justify-between items-center px-5 py-5">
         <h1 className="text-3x1 font-bold">Do you still like these products?</h1>
 
-         <div className="flex gap-3  ">
+         <div className="flex gap-3 ">
           <ChevronLeft  
       className='w-5 h-5 cursor-pointer text-black'
       onClick={scrollRight} />
@@ -79,6 +80,7 @@ function Body() {
       </div>
       
     </div>
+    
 <Grace/>
 <Interesting/>
     </>

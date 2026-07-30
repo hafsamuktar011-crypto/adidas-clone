@@ -10,11 +10,11 @@ function Interesting() {
 
       <h1 className="text-4xl font-bold mb-6 ">MOST INTERESTING</h1>
 
-      <div className="flex gap-6  w-full">
-        <img src={nba} alt="nba" className="w-64 h-64 object-cover rounded-lg" />
-        <img src={kk} alt="kk" className="w-64 h-64 object-cover rounded-lg" />
-        <img src={ll} alt="ll" className="w-64 h-64 object-cover rounded-lg" />
-        <img src={oo} alt="oo" className="w-64 h-64 object-cover rounded-lg" />
+      <div className="flex gap-6  min-w-10/12  sticky bottom-5">
+        <img src={nba} alt="nba" className="w-full h-64 object-cover " />
+        <img src={kk} alt="kk" className="w-full h-64 object-cover " />
+        <img src={ll} alt="ll" className="w-full h-64 object-cover " />
+        <img src={oo} alt="oo" className="w-full h-64 object-cover " />
       </div>
     </div>
   )

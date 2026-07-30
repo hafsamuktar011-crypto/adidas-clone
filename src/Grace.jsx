@@ -10,11 +10,11 @@ function Grace() {
   alt=""
   className="w-full inset-0 h-full absolute bg-cover bg-center "
 />
-      <div className="relative z-10 text-white px-10 py-16 space-y-6 ">
+      <div className="relative z-10 text-white px-10 py-16 space-y-6 h-full top-27 ">
         <h1 className="text-6xl font-bold text-center"
         >HISTORY AND GRACE</h1>
 
-      <div  className='relative flex   '>
+      <div dir="rtl" className='relative flex '>
      <p >At adidas, we believe that sports have the power to transform lives. It's not just about keeping your body and 
         mind fit; it's about bringing people together
          and creating a community of individuals who share 
@@ -25,7 +25,7 @@ function Grace() {
             and from the technology we develop to help them achieve their goals.</p>
       </div>
       
-<div className='relative flex' >
+<div className='relative flex ' >
      <p>Whether you're a runner, a basketball player, 
             a soccer player, or someone who loves to train,
              you'll find a home with us. Our products are designed to meet your needs, 
