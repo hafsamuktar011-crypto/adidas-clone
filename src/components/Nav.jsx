@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import adidaslogo from '../assets/img/adidas - png.png'
-import { Search, User, Heart, Briefcase, X, ChevronDown } from 'lucide-react'
+import { Search, User, Heart, Briefcase, X, ChevronDown ,Menu} from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 
 function Nav() {
   const [showAlert, setShowAlerts] = useState(false)
+  const [openMenu,setOpenMenu]=useState(false)
 
   return (
 
@@ -46,15 +47,38 @@ function Nav() {
         </div>
       )}
 
+{openMenu && (
+  <div className="relative sm:hidden w-full h-screen bg-white shadow-md flex flex-col">
+                <X size={24} onClick={()=>{setOpenMenu(false)}}
+                className='absolute top-4 right-4 cursor-pointer border-b' />
+                <br />
+    <button className="p-4 border-b text-left">WOMAN</button>
+    <button className="p-4 border-b text-left">MEN</button>
+    <button className="p-4 border-b text-left">KIDS</button>
+    <button className="p-4 border-b text-left">NEWS</button>
+    <button className="p-4 border-b text-left">SPORTS</button>
+    <button className="p-4 text-left">ADIDAS WORLD</button>
+  </div>
+)}
 
-
-      <nav className="flex justify-between items-center bg-white px-6 py-3 border-b sticky w-full ">
+      <nav className="flex justify-between items-center 
+       bg-white px-6 py-3 border-b sticky w-full ">
 
       
+   <div className="sm:hidden">
+  <Menu className="cursor-pointer w-6 h-6" 
+  onClick={()=>{
+       setOpenMenu(!openMenu)
+  }}/>
 
+
+     
+
+      </div>
+    
         <img src={adidaslogo} alt="adidas logo" className="h-8" />
 
-        <div className="flex gap-4">
+        <div className="hidden gap-4 sm:flex">
           <button>WOMAN</button>
           <button>MEN</button>
           <button>KIDS</button>

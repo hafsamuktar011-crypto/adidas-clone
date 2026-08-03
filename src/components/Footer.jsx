@@ -15,7 +15,7 @@ function Footer() {
         <img src={vector} alt="vector" />
       </div>
 
-      <div className="flex justify-around items-end mb-6">
+      <div className="flex justify-around items-end mb-6 max-sm:flex-col max-sm:items-center">
         <img src={info} alt="info" />
         <img src={collection} alt="collection" />
         <img src={sport} alt="sport" />

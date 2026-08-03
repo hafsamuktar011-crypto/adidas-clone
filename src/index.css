@@ -27,4 +27,12 @@
     background: var(--bg);
   }
 }
+@media (max-width:760px){
+  #bgCover {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
 

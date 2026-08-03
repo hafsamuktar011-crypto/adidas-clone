@@ -1,17 +1,20 @@
 import React from 'react'
 import coverImg from '../assets/img/Cover Image.png'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Smartphone } from 'lucide-react'
 import adidaslogo from '../assets/img/adidas - png.png'
 
 
 function Hero() {
 
   return (
-    <div className='h-screen  w-full px-8 flex flex-col justify-center '
+    <div id='bgCover' 
+    className='h-screen  w-full px-8 flex flex-col justify-center 
+    bg-cover bg-center bg-no-repeat max-sm:bg-cover'
     style={{background:`url(${coverImg})`,
            backgroundPosition:"Center",
            backgroundSize:"cover",
-           backgroundRepeat:"no-repeat"}}>
+           backgroundRepeat:"no-repeat",
+          }}>
             <div className='relative'>
                 <img src={adidaslogo} alt="Adidas logo"
                 className='absolute top-0 left-0 w-32 opacity-40 ' />
